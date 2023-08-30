@@ -14,7 +14,7 @@ class TestSpacecraftMovement(unittest.TestCase):
 
     def test_move_forward(self):    
         self.space_craft.move('f')
-        self.assertEqual(self.space_craft.getPosition(), (0, 3, 0))
+        self.assertEqual(self.space_craft.getPosition(), (0, 1, 0))
 
 if __name__ == '__main__':
     unittest.main()

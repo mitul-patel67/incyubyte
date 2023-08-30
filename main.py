@@ -7,6 +7,6 @@ class Spacecraft:
     def move(self,command):
         if command == 'f':
             if self.direction == 'n':
-                self.position = (self.position[0],self.position[1]+2,self.position[2])
+                self.position = (self.position[0],self.position[1]+1,self.position[2])
     def getPosition(self):
         return self.position
