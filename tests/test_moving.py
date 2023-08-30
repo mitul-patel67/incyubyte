@@ -10,8 +10,9 @@ sys.path.append(module_path)
 from main import Spacecraft  
 
 class TestSpacecraftMovement(unittest.TestCase):
-     space_craft = Spacecraft((0, 0, 0), 'n')
-
+     initial_direction = input("Enter initial direction: Choose from 'N', 'S', 'E', 'W', 'Up', 'Down' :: ")
+     space_craft = Spacecraft((0,0,0), initial_direction.title()) 
+     
      def test_move_forward(self):    
         self.space_craft.move_forward('f')
         self.assertEqual(self.space_craft.getPosition(), (0, 0, 0))
